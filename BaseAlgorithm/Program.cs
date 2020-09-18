@@ -16,6 +16,9 @@ namespace BaseAlgorithm
         {
             BubbleSort.Sort(array);
             Console.WriteLine($"冒泡排序结果：{string.Join(",", array)}");
+
+            QuickSort.Sort(array, 0, array.Length - 1);
+            Console.WriteLine($"快速排序结果：{string.Join(",", array)}");
         }
     }
 }
